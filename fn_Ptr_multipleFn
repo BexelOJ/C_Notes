@@ -33,3 +33,10 @@ int main() {
 
     return 0;
 }
+
+// Output:
+
+// Addition: 15
+// Subtraction: 5
+// Multiplication: 50
+
