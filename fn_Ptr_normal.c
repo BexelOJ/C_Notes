@@ -7,9 +7,9 @@ int main()
 int res;
 int (*FnPtr) (int, int);  // function pointer declaration
 
-FnPtr = &add;      // function pointer declaration method_01, with &
-FnPtr = add;       // function pointer declaration method_02, without &
-
+FnPtr = add;          // function pointer declaration method_01, without &
+// FnPtr = &add;      // function pointer declaration method_02, with &
+    
 res = FnPtr(3, 4);           // function call
 printf("Sum is %d\n", res);
 
