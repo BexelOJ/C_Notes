@@ -22,7 +22,9 @@ int add(int x, int y)           // function definition
     return sum;
 }
 
+// Output:
 
+// Sum is 7
 
 
 
