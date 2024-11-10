@@ -10,13 +10,13 @@ int (*FnPtr) (int, int);  // function pointer declaration
 FnPtr = &add;      // function pointer declaration method_01, with &
 FnPtr = add;       // function pointer declaration method_02, without &
 
-res = FnPtr(3, 4);
+res = FnPtr(3, 4);           // function call
 printf("Sum is %d\n", res);
 
 return 0;
 }
 
-int add(int x, int y)
+int add(int x, int y)           // function definition
 {
     int sum = x + y;
     return sum;
