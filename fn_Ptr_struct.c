@@ -27,3 +27,7 @@ int add(int x, int y)         // Add function definition
         int res = x + y;
         return res;
     }
+
+// Output:
+
+// The Result of Addition is 7
