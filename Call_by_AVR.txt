@@ -4,8 +4,8 @@ V - Value
 R - Reference
 
 A      V      R 
-*                &   //  Function Definition
-&                     //  Function Call
+*             &   //  Function Definition
+&                 //  Function Call
 
 ★★★
 In C++, the terms
@@ -92,9 +92,10 @@ Summary of Symbols:
 
 Call by Value:                No special symbol.
 
-Call by Reference:     &
+Call by Reference:            &
 
-Call by Address:          * (dereferencing) and & (address-of operator)
+Call by Address:              * (dereferencing) and 
+                              & (address-of operator)
 
 ★★★
 In C++,
@@ -123,7 +124,7 @@ void foo(int *x)
 
 
 ★★★
-Why Use Call by Address Instead of Call by Reference?
+Why Use Call by Address Instead of Call by Reference ?
 
 1. Handling Optional Parameters:
 
@@ -204,16 +205,24 @@ While call by reference is more intuitive, safer, and easier to use in most C++ 
 
 It allows passing null pointers (useful for optional parameters).
 
-It’s essential when dealing with dynamic memory or low-level operations.
+It’s essential when dealing with Dynamic Memory or low-level operations.
 
-It’s necessary when working with C-style code or when pointer manipulation is involved.
+It’s necessary when working with C-style code or when Pointer Manipulation is involved.
 
 
 Thus, call by address is not necessarily better or worse than call by reference—it is simply a more flexible tool that is used when pointer semantics or memory management considerations require it.
 
-★★★
 
 ★★★
+
+*  - 
+(English) - asterisk 
+
+(Programming) - dereferencing Operator / pointer indirection operator
+
+&  - 
+(English) - ampersand   
+(Programming) - reference operator  /  address of Operator 
 
 
 ★★★
