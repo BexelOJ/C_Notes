@@ -1,4 +1,4 @@
-★★★
+★★★----------------------------------------------------------------------------
 A - Address
 V - Value
 R - Reference
@@ -7,7 +7,7 @@ A      V      R 
 *             &   //  Function Definition
 &                 //  Function Call
 
-★★★
+★★★----------------------------------------------------------------------------
 In C++, the terms
 
 call by reference
@@ -16,7 +16,7 @@ call by value
 
 refer to different ways of passing arguments to functions.
 
-★★★
+★★★----------------------------------------------------------------------------
 Here's the breakdown of the symbols associated with each:
 
 1. Call by Value
@@ -40,7 +40,7 @@ int main()
     foo(a);  // Call by value, 'a' is unaffected
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 2. Call by Reference
 
 Symbol:
@@ -62,7 +62,7 @@ int main()
     foo(a);  // Call by reference, 'a' is modified
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 3. Call by Address
 
 Symbol:
@@ -87,7 +87,7 @@ int main()
     foo(&a);  // Call by address, 'a' is modified      //  Function Call
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 Summary of Symbols:
 
 Call by Value:                No special symbol.
@@ -97,14 +97,14 @@ Call by Reference:            &
 Call by Address:              * (dereferencing) and 
                               & (address-of operator)
 
-★★★
+★★★----------------------------------------------------------------------------
 In C++,
 call by reference and
 call by address
 
 are two different ways to pass arguments to a function, each with specific use cases. While call by reference is often preferred, call by address can be used in some situations where it is more appropriate or necessary. Here's a breakdown of why call by address might be used:
 
-★★★
+★★★----------------------------------------------------------------------------
 Key Differences between Call by Reference and Call by Address:
 
 Call by Reference: The function gets a reference (alias) to the original variable, meaning any changes to the parameter inside the function directly affect the original variable. It is simpler and safer because it avoids dealing with pointers explicitly.
@@ -114,7 +114,7 @@ void foo(int &x)
     x = 10; // Modifies the original variable
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 Call by Address: The function gets a pointer to the original variable. The function must dereference the pointer to access and modify the value. This gives more control over memory and is sometimes necessary when working with dynamic memory or when the function might need to be passed a nullptr.
 
 void foo(int *x)
@@ -123,7 +123,7 @@ void foo(int *x)
 }
 
 
-★★★
+★★★----------------------------------------------------------------------------
 Why Use Call by Address Instead of Call by Reference ?
 
 1. Handling Optional Parameters:
@@ -141,6 +141,7 @@ void foo(int *x)
     }
 }
 
+----------------------------------------------------------------------------
 2. Working with Dynamic Memory:
 
 When dealing with dynamically allocated memory (e.g., using new or malloc), call by address is often used because you are passing a pointer to an allocated block of memory. This is more flexible and allows managing dynamic memory explicitly.
@@ -158,6 +159,7 @@ int main()
     delete ptr; // Don't forget to free memory
 }
 
+----------------------------------------------------------------------------
 3. Working with Arrays:
 
 When passing arrays to functions, call by address is used because arrays decay to pointers when passed to a function. This means you are passing the address of the first element of the array to the function, not a reference.
@@ -174,7 +176,7 @@ int main()
     foo(arr);
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 4. Flexibility and Control:
 
 Call by address provides more control because you can choose whether to dereference the pointer or not. You also have the ability to pass nullptr or perform pointer arithmetic. This is useful for low-level operations or certain advanced scenarios.
@@ -188,17 +190,17 @@ void foo(int *x)
     }
 }
 
-★★★
+★★★----------------------------------------------------------------------------
 5. Legacy Code and C-Style Functions:
 
 In certain situations, especially when interacting with legacy C code or working with functions that expect pointers (like some older system calls, libraries, or API), call by address is used because C only deals with pointers and does not support references in the same way C++ does.
 
-★★★
+★★★----------------------------------------------------------------------------
 6. Explicit Memory Management:
 
 Call by address is useful when you want to have explicit control over memory management, especially when manipulating data structures like linked lists or trees, where pointers are inherently used to create links between nodes.
 
-★★★
+★★★----------------------------------------------------------------------------
 Summary:
 
 While call by reference is more intuitive, safer, and easier to use in most C++ cases, call by address has specific advantages:
@@ -213,7 +215,7 @@ It’s necessary when working with C-style code or when Pointer Manipulation is 
 Thus, call by address is not necessarily better or worse than call by reference—it is simply a more flexible tool that is used when pointer semantics or memory management considerations require it.
 
 
-★★★
+★★★----------------------------------------------------------------------------
 
 *  - 
 (English) - asterisk 
@@ -225,13 +227,13 @@ Thus, call by address is not necessarily better or worse than call by reference�
 (Programming) - reference operator  /  address of Operator 
 
 
-★★★
+★★★----------------------------------------------------------------------------
 
 
-★★★
+★★★----------------------------------------------------------------------------
 
 
-★★★
+★★★----------------------------------------------------------------------------
 
 
 
