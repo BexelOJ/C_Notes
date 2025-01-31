@@ -3,9 +3,11 @@ A - Address
 V - Value
 R - Reference
 
-A      V      R 
-*             &   //  Function Definition
-&                 //  Function Call
+
+V     R      A 
+-     -      &     //  Function Call
+-     &      *     //  Function Definition
+
 
 ★★★----------------------------------------------------------------------------
 In C++, the terms
