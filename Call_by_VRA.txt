@@ -219,12 +219,12 @@ Thus, call by address is not necessarily better or worse than call by reference�
 
 ★★★----------------------------------------------------------------------------
 
-*  - 
+*  
 (English) - asterisk 
 
-(Programming) - dereferencing Operator / pointer indirection operator
+(Programming) - dereference Operator / pointer indirection operator
 
-&  - 
+&  
 (English) - ampersand   
 (Programming) - reference operator  /  address of Operator 
 
